@@ -70,6 +70,29 @@
         font-style: normal;
         font-size: 2em;
       }
+            /* Down arrow styling and pulsating animation */
+            .down-arrow {
+              font-size: 3em;
+              color: white;
+              animation: pulse 2s infinite;
+              cursor: pointer;
+              position: relative;
+              z-index: 1;
+              scale: .6;
+              top: 80px;
+            }
+            
+            @keyframes pulse {
+              0%, 100% {
+                transform: translateY(0);
+                opacity: 0.7;
+              }
+              50% {
+                transform: translateY(10px);
+                opacity: 1;
+              }
+            }
+            
     </style>
   </head>
   <body>
@@ -79,7 +102,10 @@
         I loved you before I ever met you. I will love you until the sun dies.
         And when it does, I will love you in the darkness. -Romulus Au Raa
       </header>
+      <div class="down-arrow">&#x2193;&#x2193;&#x2193;</div>
+
     </section>
+
 
     <!-- Additional content that appears when scrolling down -->
     <section class="content">
@@ -98,7 +124,8 @@
       <p style="text-align: right;">
         Love,
         <br />
-        Andy
+        <em>Andy</em>
+        
       </p>
 
 
