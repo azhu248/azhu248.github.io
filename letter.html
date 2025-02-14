@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night Sky</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html,
+      body {
+        height: 100%;
+        overscroll-behavior: none;
+      }
+      
+      /* Apply the static background image to the body */
+      body {
+        font-family: Arial, sans-serif;
+        background: url('night.webp') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        overflow-x: hidden;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      /* Hero section: full screen with centered header quote */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .hero header {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 3em;
+        margin-bottom: 1em;
+        z-index: 1;
+      }
+      .hero, .content {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .content p {
+        max-width: 800px;
+        margin: 20px auto;
+        font-size: 1.2em;
+        line-height: 1.6;
+        padding-bottom: 100px;
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Full-screen hero section with the header quote -->
+    <section class="hero">
+      <header>
+        I loved you before I ever met you. I will love you until the sun dies.
+        And when it does, I will love you in the darkness. -Romulus Au Raa
+      </header>
+    </section>
+
+    <!-- Additional content that appears when scrolling down -->
+    <section class="content">
+      <p>
+        Dear Angie,
+      </p>
+      <p>
+        Words cannot do justice my feelings for you, but I will try anyways. Your eyes shine like the stars themselves, and your presence warms me like the sun. My life before I met you felt like a night without stars, and I am grateful for every moment we spend together.
+      </p>
+      <p>
+        There's a moment I'll never forget, when we were eating together at Mojo. You were refuting some argument I made in the Great Lobster Debate, but I was so entranced by you that I didn't even care. I was just happy to be there with you, in that moment, in that place. Your eyes sparkled with passion. That was the moment I fell for you.
+      </p>
+      <p>
+        I thank God for bringing someone as perfect as you into my life every day. Even if I were to write a thousand letters, I would never figure out the proper configuration of words to express my love for you, but I hope you gleaned a small portion of it from this letter.
+      </p>
+      <p style="text-align: right;">
+        Love,
+        <br />
+        Andy
+      </p>
+
+
+    </section>
+  </body>
+</html>

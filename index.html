@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASCII Flower Generator</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #d43b3b;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    pre {
+      white-space: pre;
+      font-size: 10px;
+      line-height: 1;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #a13030;
+    }
+  </style>
+</head>
+<body>
+    <h1>for my favorite girl in the world</h1>
+<pre>
+                ⢀⣀   ⣀⣀⣀⡀                            
+            ⢀⣀⣀⢠⠿⠷⣭⣶⣯⣥⣶⣾⣿    ⢠⠖⣒⡒⢢⣄⡴⠒⢢⡀              
+            ⢸⠷⣾⣿⡀⢠⡿⠑  ⢸⣿⡿⡄   ⢸⢼⣍⠙⠛⠙⢷⡀ ⣷⠒⠈⡆           
+            ⢸⣼⡟⣭⣻⢿⣧⡀ ⣰⡿⠛⣫⣽  ⢠⠃⠈⢾⣄  ⢸⣷⡶⠓⢷⣄⡇           
+            ⠈⣿⡏ ⠈ ⠙⣿⣴⡿⠁ ⠁⢸⠂ ⢸   ⢫⣆⣰⡟⠁  ⢈⣿⠃  ⡀        
+             ⠸⣷    ⠘⣿⡇  ⢀⡟  ⠘⡆   ⣿⡏    ⣸⡏  ⣾⣿⣿⣿⣶⣾⡝⡆⣀⡀
+         ⢀⡠⣤⠤⡀⠈⢧⡀   ⣻⡇ ⣠⠞    ⠙⢄⡀ ⣿⠁   ⣰⠋  ⡰⣿⢿⣏ ⠹⣷⣿⣿⣿⣿
+      ⡞⠉⢱⡾⠾⠛⣷⠷⡀ ⠙⠦⠤⢤⣿⣿⠟     ⢀⣴⣀⠭⢶⣿⣤⣄⠤⠞⠁   ⣿⣿⠎⢿⣦⣾⠟⠏⠾⣿⡇
+    ⡖⢒⣇⡀⣿  ⢠⡟ ⠘⡆     ⣿     ⣠⣿⣿⡇ ⢰⡏ ⠈⠑⠢⣄⡀  ⢻⡹ ⢸⡿⠁ ⠂⣰⡟ 
+    ⠱⣼⠋⠉⠛⠷⣤⣼⠁  ⢱     ⢹⡇  ⡠⢺⣿⣿⣿⡇ ⣼⠇     ⣭⠲⢄⡀⠙⢦⣼⣧⠄⢀⡴⠋  
+     ⠻⣆   ⠈⢻⡄ ⢀⠆   ⣰⡄⠘⣷⢀⡜⠁⣾⣿⣿⣿⡇⢀⡿   ⣴⣧⢸⣿⣧ ⠉⠲⢄⣿⠋⠉⠉    
+      ⠙⢦⡀   ⣧⣴⠋   ⢠⣿⣿⡄⢿⡎ ⢸⣿⣿⣿⣿⡇⢸⡇ ⢀⣾⣿⣿⣾⣿⣿⡇  ⢸⠏⠑⠢⣀⣤⡶  
+        ⠈⠁⠒⠈⠙⣯    ⣼⣿⣿⣿⣼⡇ ⣿⣿⣿⣿⣿⠃⣾⠃⢀⣿⣿⣿⡇⣿⣿⣿⣧ ⢀⡿ ⢀⣴⣿⣿⡇  
+       ⢀⣀    ⠘⣷   ⣿⣿⣿⣿⣟⡇⢠⣿⣿⣿⣿⡟⢀⣿⢀⣾⣿⣿⣿⠇⢿⣿⣿⣿ ⣸⠇⢠⣾⣿⣿⠏⢣  
+       ⠈⢿⣿⣦⣄  ⠘⣧ ⢀⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⡿⠁⢸⡏⣸⣿⣿⣿⡟ ⠸⣿⣿⣿⢀⡿⢠⣿⣿⣿⠏  ⡇ 
+        ⠈⢿⣿⣿⣷⣄ ⣸⣷⠉⣿⣿⣿⣿⣿⢹⣸⣿⣿⡿⠁ ⢸⣇⣿⣿⣿⡟   ⠹⣿⣿⣼⢧⣿⣿⠟⠁⢀⢔⡫⠆ 
+         ⠈⠻⣿⣿⣿⣿⣄⠹⡆⢹⣿⣿⣿⡟⢸⣿⡿⠋⡀  ⣿⢹⣿⣿⠏⢀⣴⣿  ⠙⢿⣿⠛⠋⢁⡠⣺⠔⠉   
+          ⣠⠟⢿⣿⣿⣿⣧⣹⡜⣿⣿⣿⠇⢸⣧ ⢰⣿⡀ ⣿⠸⠟⠁ ⣾⣿⡟   ⢸⣇⡠⢖⡭⠊    ⡄ 
+          ⢾⠭⢒⡿⠿⢿⣿⣿⣿⣿⣿⠏ ⠸⣿ ⣿⣿⣷⢰⣿   ⣼⣿⣿⠇ ⢀⡤⣞⠭⠚⢹      ⠇ 
+          ⢸⡀ ⠘⡏⠒⠪⠭⣛⡿⠯⣀⡀ ⣿ ⣿⣿⣿⣸⡿  ⢰⣿⣿⣿⠴⣪⠕⠊⠁  ⠚     ⢀  
+           ⡇  ⢳    ⠉⠑⢲⡪⠭⣛⡓⠿⢿⣿⣿⣇ ⣀⠼⢛⡩⠒⠉            ⢸  
+           ⢸  ⠈⣧      ⢣   ⠉⢁⡐⠖⠈⠩⠔⠊⠁               ⡎  
+            ⡆  ⠘⣆  ⢀⡀⠠⠼⠓⠂⠩⠑⠒⠈                    ⢀⠇  
+           ⣀⡙⠂ ⠉⠉⠉                               ⢸   
+           ⢱                               ⠂     ⡇   
+            ⢇                             ⢀     ⢸    
+            ⠘⡄   ⢸⡀                             ⡎    
+             ⠹⡀   ⢇                       ⠃    ⡸     
+              ⢱⡀  ⠘⡄                     ⠰    ⢠⠃     
+               ⢣  ⠘⣳                    ⢀⡇   ⢠⠃      
+                ⢇  ⢹⡆                   ⡞   ⣰⠃       
+                ⠈⠆  ⢷                  ⡸⠁  ⡰⠁        
+                 ⠸⡄ ⠘⡆                ⣰⠃  ⡰⠁         
+                  ⠱⡀ ⠹⡀              ⢠⡏  ⡰⠁          
+                   ⠑⡄ ⢱⡀            ⢠⡿  ⡰⠁           
+                    ⠘⢆ ⢣           ⢀⢾⠃ ⣰⠃            
+                     ⠈⢦⠈⣧          ⣨⠏ ⣰⠃             
+                 ⡶⠋⠉⠓⢦⣄⢣⡈⢧        ⢰⡛ ⣰⠁              
+                 ⠻⣦⣄⡀ ⠙⢷⣷ ⢧      ⢀⣣⡵⡾⠁               
+                   ⠉⠛⠷⣦⣤⣹⣟⣈⣇⣀⡠⠤⠖⠛⠉⣁⣰⠁                
+                   ⣠⠖⠋⣉⣽⠿⢻⣿⣧⣤⣤⡶⠶⠛⠋⠁⠘⡄                
+                  ⠰⠷⠶⠛⠉⠁⢀⣿⡞⣧⠐   ⢸⢸  ⢣                
+                        ⣜⡟⡇⢻⡆    ⠏⡄ ⠘⡀               
+                       ⢰⣿⠃⡇ ⣿ ⣀  ⠸⠃  ⢧               
+                       ⣾⠏ ⠃ ⢸⡇⢸   ⢀  ⠸⡀              
+                     ⢀⡾⠛⠦⣀⣀  ⡇⠈⡇  ⠈⡀ ⢀⡇              
+                    ⠚⠋   ⠈⢸  ⢹ ⢣⢀⡀⠤⠒⠊⠁               
+                           ⠉⠁⢸                       
+                             ⢸                       
+    </pre>
+    <a href="slides.html"><button>be mine?</button></a>
+    <p>created by andy for his beautiful girlfriend angie</p>
+
+</body>
+</html>
